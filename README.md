@@ -11,14 +11,20 @@ React + Vite frontend. Node.js + Express backend. All intel stored locally — n
 ## CAPABILITIES
 
 **Quest Log** — All 494 quests filterable by trader, searchable by name. One click to mark complete — prerequisite quests auto-complete, uncompleting cascades forward through the chain. Alphabetical. No excuses.
+![Intel Board  Original Size](https://github.com/user-attachments/assets/f77dfd09-8e2f-4556-99d5-4d0f6f496b54)
+
 
 **Quest Tree** — Visual directed graph of quest chains per trader. Click any node to illuminate its full ancestor/descendant chain in that trader's colour. Green dot means you're cleared hot.
+![DP Chain  Original Size](https://github.com/user-attachments/assets/1e7fa5d0-8ecc-4063-9e17-38680b505158)
 
 **Tactical Map** — 10 maps with per-floor switching. 197 GPS-positioned quest objectives plotted as colour-coded pins. Scroll to zoom toward cursor, drag to pan, toggle labels, hide completed objectives. Click any pin to open the full intel flyout — selected quest pins pulse and number themselves so you know exactly where to be.
+![Tactical  Original Size](https://github.com/user-attachments/assets/f1eab00c-179f-4705-8a5d-44fc4d224065)
 
 **Unlockables** — Full catalogue of 224 trader offer unlocks with quest chain progress. Know what you're grinding toward before you grind.
+![Contraband  Original Size](https://github.com/user-attachments/assets/34795dd6-faa6-46d7-9f80-35a38562548b)
 
 **Operator Compare** — Side-by-side PMC stats, trader-by-trader standings, bragging rights board, and an optional AI-generated debrief report powered by Claude. Useful for establishing who needs to be embarrassed into playing more.
+![Debrief  Original Size](https://github.com/user-attachments/assets/eef36f6e-0acb-4ceb-8e4c-bab335e32423)
 
 **Dual Operator** — Separate progress tracking per PMC. Second operator connects over LAN from their own machine. Progress saves automatically.
 
