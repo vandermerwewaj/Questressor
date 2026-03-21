@@ -1,0 +1,6 @@
+{
+  "users": {
+    "user1": { "name": "Dad", "color": "#c8a84b" },
+    "user2": { "name": "Declan", "color": "#51ed49" }
+  }
+}

@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local data files — users provide their own
+tasks.json
+traders.json
+map-gps.json
+maps/
+
+# User progress and config — personal data
+progress.json
+
+# Environment variables — NEVER commit this
+.env
+
+# OS clutter
+.DS_Store
+Thumbs.db
