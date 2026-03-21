@@ -905,24 +905,11 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
   const floorLabel = f => f.replace(/_/g, " ");
   const svgText = svgTexts[selectedMap] || null;
 
-  // Pin positioning — measure the actual rendered SVG element rect
+  // Pin positioning — calculate based on viewBox and container size
   const getPinStyle = (leftPct, topPct) => {
-    if (!svgContainerRef.current || !containerRef.current) {
+    if (!containerRef.current || !svgViewBox) {
       return { left: `${leftPct}%`, top: `${topPct}%` };
     }
-    const svgEl = svgContainerRef.current.querySelector("svg");
-    if (svgEl) {
-      const svgRect = svgEl.getBoundingClientRect();
-      const conRect = containerRef.current.getBoundingClientRect();
-      const offsetX = svgRect.left - conRect.left;
-      const offsetY = svgRect.top  - conRect.top;
-      return {
-        left: offsetX + (leftPct / 100) * svgRect.width,
-        top:  offsetY + (topPct  / 100) * svgRect.height,
-      };
-    }
-    // Fallback to viewBox math if SVG not yet rendered
-    if (!svgViewBox) return { left: `${leftPct}%`, top: `${topPct}%` };
     const cW = containerRef.current.offsetWidth;
     const cH = containerRef.current.offsetHeight;
     const imgAspect = svgViewBox.w / svgViewBox.h;
