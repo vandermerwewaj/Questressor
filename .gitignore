@@ -9,6 +9,7 @@ tasks.json
 traders.json
 map-gps.json
 maps/
+mapdata/
 
 # User progress and config — personal data
 progress.json

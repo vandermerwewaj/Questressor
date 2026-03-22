@@ -15,7 +15,7 @@ const TC = {
   "BTR Driver":  { base:"#1f4d20", light:"#4caf50", bg:"rgba(76,175,80,.1)",    label:"#a5d6a7" },
   Lightkeeper:   { base:"#004d4d", light:"#00bcd4", bg:"rgba(0,188,212,.1)",    label:"#80deea" },
 };
-const DC = { base:"#2a3828", light:"#5a7060", bg:"rgba(90,112,96,.1)", label:"#9db8a0" };
+const DC = { base:"#252d3a", light:"#5a7060", bg:"rgba(90,112,96,.1)", label:"#9db8a0" };
 const tc = (trader) => TC[trader] || DC;
 
 const OBJ_ICONS = {
@@ -146,81 +146,81 @@ function getRelated(questId, allTasks) {
 const GSS = `
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#070b09;overflow:hidden}
-.eft-app{font-family:'Rajdhani',sans-serif;background:#070b09;color:#dde8de;height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+body{background:#07090c;overflow:hidden}
+.eft-app{font-family:'Rajdhani',sans-serif;background:#07090c;color:#d8dfe8;height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
 .eft-app::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.04) 3px,rgba(0,0,0,.04) 4px);pointer-events:none;z-index:9999}
 
 /* ── Header ── */
-.hdr-top{display:flex;align-items:center;height:46px;background:#080c08;border-bottom:1px solid #1e2b1e;padding:0 12px;gap:8px;flex-shrink:0}
+.hdr-top{display:flex;align-items:center;height:46px;background:#080b0f;border-bottom:1px solid #1a2030;padding:0 12px;gap:8px;flex-shrink:0}
 .hdr-logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .hdr-logo-text{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;color:#c8a84b;text-transform:uppercase}
 .hdr-logo-sub{font-family:'Share Tech Mono',monospace;font-size:8px;color:#2e5030;letter-spacing:.06em}
 .hdr-users{margin-left:auto;display:flex;align-items:center;gap:6px;flex-shrink:0}
-.hdr-tabs{display:flex;align-items:center;height:42px;background:#080c08;border-bottom:1px solid #1e2b1e;flex-shrink:0;padding:0 12px;gap:8px}
+.hdr-tabs{display:flex;align-items:center;height:42px;background:#080b0f;border-bottom:1px solid #1a2030;flex-shrink:0;padding:0 12px;gap:8px}
 
 /* ── Tab select ── */
-.tab-select{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;background:#0e1410;border:1px solid #2a3828;color:#c8a84b;padding:8px 32px 8px 12px;border-radius:2px;cursor:pointer;outline:none;-webkit-appearance:none;appearance:none;flex:1}
+.tab-select{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;background:#0d1014;border:1px solid #252d3a;color:#c8a84b;padding:8px 32px 8px 12px;border-radius:2px;cursor:pointer;outline:none;-webkit-appearance:none;appearance:none;flex:1}
 .tab-select-wrap{position:relative;flex:1;max-width:320px}
 .tab-select-wrap::after{content:'▼';position:absolute;right:10px;top:50%;transform:translateY(-50%);color:#c8a84b;font-size:9px;pointer-events:none}
 
 /* ── Inputs ── */
-.search-in{background:#101610;border:1px solid #233023;color:#dde8de;padding:6px 12px;font-family:'Share Tech Mono',monospace;font-size:12px;border-radius:2px;outline:none;transition:border-color .2s;min-width:0}
+.search-in{background:#101610;border:1px solid #233023;color:#d8dfe8;padding:6px 12px;font-family:'Share Tech Mono',monospace;font-size:12px;border-radius:2px;outline:none;transition:border-color .2s;min-width:0}
 .search-in:focus{border-color:#c8a84b}
 .search-in::placeholder{color:#3a4e3c}
 
 /* ── Buttons ── */
 .filter-btn{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border:1px solid #233023;background:transparent;color:#5a7060;cursor:pointer;border-radius:2px;transition:all .15s;white-space:nowrap;flex-shrink:0}
-.filter-btn:hover{color:#9db8a0;border-color:#3d5040}
+.filter-btn:hover{color:#9db8a0;border-color:#3a4a58}
 .filter-btn.active{border-color:#c8a84b;background:rgba(200,168,75,.1);color:#c8a84b}
 .usr-btn{display:flex;align-items:center;gap:5px;padding:5px 9px;border:1px solid;border-radius:3px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;transition:all .2s;background:transparent;white-space:nowrap}
 
 /* ── Filter rows ── */
-.filter-row{padding:7px 12px;border-bottom:1px solid #1e2b1e;background:#0a0f0a;display:flex;align-items:center;gap:7px}
-.filter-row-vendors{padding:6px 12px;border-bottom:1px solid #1e2b1e;background:#080c08;display:flex;align-items:center;gap:5px;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex-shrink:0}
+.filter-row{padding:7px 12px;border-bottom:1px solid #1a2030;background:#090c10;display:flex;align-items:center;gap:7px}
+.filter-row-vendors{padding:6px 12px;border-bottom:1px solid #1a2030;background:#080b0f;display:flex;align-items:center;gap:5px;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex-shrink:0}
 .filter-row-vendors::-webkit-scrollbar{display:none}
 
 /* ── Cards ── */
-.q-card{background:#0e1410;border:1px solid #1e2b1e;border-left:3px solid;border-radius:2px;margin-bottom:6px;overflow:hidden;transition:background .15s}
+.q-card{background:#0d1014;border:1px solid #1a2030;border-left:3px solid;border-radius:2px;margin-bottom:6px;overflow:hidden;transition:background .15s}
 .q-card:hover{background:#121a12}
 .q-card.done{opacity:.45}
 .q-head{padding:9px 13px;cursor:pointer;display:flex;align-items:center;gap:9px;user-select:none}
-.q-body{border-top:1px solid #1e2b1e;padding:13px 15px;font-size:13px}
+.q-body{border-top:1px solid #1a2030;padding:13px 15px;font-size:13px}
 .chip{font-family:'Share Tech Mono',monospace;font-size:10px;padding:2px 6px;border-radius:2px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
-.chk{width:20px;height:20px;border:1.5px solid #2e402e;border-radius:2px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:11px;flex-shrink:0;transition:all .15s}
+.chk{width:20px;height:20px;border:1.5px solid #2a3845;border-radius:2px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:11px;flex-shrink:0;transition:all .15s}
 
 /* ── Flyout ── */
-.flyout{position:fixed;top:0;right:0;width:min(370px,100vw);height:100vh;height:100dvh;background:#0a0f0a;border-left:1px solid #1e2b1e;z-index:800;overflow-y:auto;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.flyout{position:fixed;top:0;right:0;width:min(370px,100vw);height:100vh;height:100dvh;background:#090c10;border-left:1px solid #1a2030;z-index:800;overflow-y:auto;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1)}
 .flyout.open{transform:translateX(0)}
 .flyout-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:799;opacity:0;pointer-events:none;transition:opacity .28s}
 .flyout-overlay.open{opacity:1;pointer-events:auto}
 
 /* ── Misc ── */
-.svg-wrap{overflow:auto;flex:1;min-height:0;background:#090d09;border:1px solid #1e2b1e;border-radius:2px}
+.svg-wrap{overflow:auto;flex:1;min-height:0;background:#090d09;border:1px solid #1a2030;border-radius:2px}
 ::-webkit-scrollbar{width:5px;height:5px}
-::-webkit-scrollbar-track{background:#0a0f0a}
-::-webkit-scrollbar-thumb{background:#2a3828;border-radius:3px}
-::-webkit-scrollbar-thumb:hover{background:#3d5040}
-.sec-lbl{font-family:'Share Tech Mono',monospace;font-size:10px;color:#3d5040;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid #1e2b1e}
-.wiki-btn{display:flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:#0e1410;border:1px solid #1e2b1e;color:#5a7060;text-decoration:none;border-radius:2px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;transition:all .15s;margin-top:6px}
-.wiki-btn:hover{color:#9db8a0;border-color:#3d5040}
+::-webkit-scrollbar-track{background:#090c10}
+::-webkit-scrollbar-thumb{background:#252d3a;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#3a4a58}
+.sec-lbl{font-family:'Share Tech Mono',monospace;font-size:10px;color:#3a4a58;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid #1a2030}
+.wiki-btn{display:flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:#0d1014;border:1px solid #1a2030;color:#5a7060;text-decoration:none;border-radius:2px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;transition:all .15s;margin-top:6px}
+.wiki-btn:hover{color:#9db8a0;border-color:#3a4a58}
 .ready-badge{font-family:'Share Tech Mono',monospace;font-size:9px;padding:1px 5px;background:rgba(46,204,113,.15);border:1px solid rgba(46,204,113,.4);color:#2ecc71;border-radius:2px}
-.bar-track{height:6px;background:#1e2b1e;border-radius:3px;overflow:hidden}
+.bar-track{height:6px;background:#1a2030;border-radius:3px;overflow:hidden}
 .bar-fill{height:100%;border-radius:3px;transition:width .6s cubic-bezier(.4,0,.2,1)}
-.cmp-card{background:#0e1410;border:1px solid #1e2b1e;border-radius:2px;padding:16px}
-.loading{display:flex;align-items:center;justify-content:center;flex:1;flex-direction:column;gap:12px;color:#3a5040;font-family:'Share Tech Mono',monospace;font-size:12px}
+.cmp-card{background:#0d1014;border:1px solid #1a2030;border-radius:2px;padding:16px}
+.loading{display:flex;align-items:center;justify-content:center;flex:1;flex-direction:column;gap:12px;color:#364858;font-family:'Share Tech Mono',monospace;font-size:12px}
 
 /* ── Map View ── */
-.map-wrap{position:relative;overflow:hidden;background:#070b09;flex:1;min-height:0;border:1px solid #1e2b1e;border-radius:2px;cursor:crosshair}
+.map-wrap{position:relative;overflow:hidden;background:#07090c;flex:1;min-height:0;border:1px solid #1a2030;border-radius:2px;cursor:crosshair}
 .map-img{width:100%;height:100%;object-fit:contain;display:block;opacity:.85}
 .map-pin{position:absolute;transform:translate(-50%,-50%);cursor:pointer;transition:transform .15s,opacity .15s;z-index:10}
 .map-pin:hover{transform:translate(-50%,-50%) scale(1.35);z-index:20}
 .map-pin.done{opacity:.25}
 .map-pin.done:hover{opacity:.6}
 .pin-dot{width:14px;height:14px;border-radius:50%;border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:7px;box-shadow:0 0 6px rgba(0,0,0,.6)}
-.pin-tooltip{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#0a0f0a;border:1px solid #2a3828;border-radius:2px;padding:6px 9px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s;min-width:140px;max-width:220px;z-index:30}
+.pin-tooltip{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#090c10;border:1px solid #252d3a;border-radius:2px;padding:6px 9px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s;min-width:140px;max-width:220px;z-index:30}
 .map-pin:hover .pin-tooltip{opacity:1}
 .pin-tooltip-name{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:12px;color:#c8d8ca;margin-bottom:2px}
-.pin-tooltip-type{font-family:'Share Tech Mono',monospace;font-size:9px;color:#3a5040;text-transform:uppercase}
+.pin-tooltip-type{font-family:'Share Tech Mono',monospace;font-size:9px;color:#364858;text-transform:uppercase}
 @keyframes mapPinPulse{0%{transform:scale(1);opacity:.9}70%{transform:scale(2.2);opacity:0}100%{transform:scale(2.2);opacity:0}}
 `;
 // ─── SMALL HELPERS ────────────────────────────────────────────────────────────
@@ -262,19 +262,19 @@ function QuestDetailPanel({ quest, completed, onToggleComplete, onClose, onShowI
       <div className="flyout-overlay open" onClick={onClose} />
       <div className="flyout open">
         {/* Header */}
-        <div style={{ padding:"15px 18px", background:c.bg, borderBottom:"1px solid #1e2b1e", position:"sticky", top:0, zIndex:10 }}>
+        <div style={{ padding:"15px 18px", background:c.bg, borderBottom:"1px solid #1a2030", position:"sticky", top:0, zIndex:10 }}>
           <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start" }}>
             <div style={{ flex:1, minWidth:0 }}>
               <div style={{ display:"flex", gap:6, marginBottom:6, flexWrap:"wrap", alignItems:"center" }}>
                 <Chip style={{ background:c.bg, color:c.label, border:`1px solid ${c.base}` }}>{quest.trader}</Chip>
                 <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#c8a84b" }}>LVL {quest.minLevel}+</span>
-                {!isDone && allPrereqsDone && <span className="ready-badge">READY</span>}
+                {!isDone && allPrereqsDone && <span className="ready-badge">CLEARED HOT</span>}
                 {isDone && <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#2ecc71", padding:"1px 5px", background:"rgba(46,204,113,.15)", border:"1px solid rgba(46,204,113,.4)", borderRadius:2 }}>✓ DONE</span>}
               </div>
-              <div style={{ fontWeight:700, fontSize:19, color:"#dde8de", lineHeight:1.1 }}>{quest.name}</div>
-              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a5040", marginTop:3 }}>◈ {quest.location}</div>
+              <div style={{ fontWeight:700, fontSize:19, color:"#d8dfe8", lineHeight:1.1 }}>{quest.name}</div>
+              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#364858", marginTop:3 }}>◈ {quest.location}</div>
             </div>
-            <button onClick={onClose} style={{ background:"none", border:"none", color:"#3a5040", cursor:"pointer", fontSize:18, padding:4, lineHeight:1, flexShrink:0 }}>✕</button>
+            <button onClick={onClose} style={{ background:"none", border:"none", color:"#364858", cursor:"pointer", fontSize:18, padding:4, lineHeight:1, flexShrink:0 }}>✕</button>
           </div>
         </div>
 
@@ -283,24 +283,24 @@ function QuestDetailPanel({ quest, completed, onToggleComplete, onClose, onShowI
           <div style={{ display:"flex", gap:7, marginBottom:16 }}>
             <button onClick={() => onToggleComplete(quest.id)}
               style={{ flex:1, padding:"9px 0", background:isDone?"rgba(46,204,113,.12)":c.bg, border:`1px solid ${isDone?"#2ecc71":c.light}`, color:isDone?"#2ecc71":c.label, cursor:"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, letterSpacing:".12em", textTransform:"uppercase", borderRadius:2 }}>
-              {isDone ? "✓ COMPLETED" : "MARK COMPLETE"}
+              {isDone ? "✓ EXTRACTED" : "MARK EXTRACTED"}
             </button>
             <button onClick={onShowInTree}
-              style={{ padding:"9px 13px", background:"#0e1410", border:"1px solid #1e2b1e", color:"#5a7060", cursor:"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, letterSpacing:".1em", textTransform:"uppercase", borderRadius:2 }}>
-              TREE →
+              style={{ padding:"9px 13px", background:"#0d1014", border:"1px solid #1a2030", color:"#5a7060", cursor:"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, letterSpacing:".1em", textTransform:"uppercase", borderRadius:2 }}>
+              OP CHAIN →
             </button>
           </div>
 
           {/* Objectives */}
           <div style={{ marginBottom:15 }}>
-            <Lbl>OBJECTIVES</Lbl>
+            <Lbl>ORDERS</Lbl>
             {quest.objectives.map((obj, i) => (
               <div key={i} style={{ display:"flex", gap:9, marginBottom:7, alignItems:"flex-start" }}>
                 <span style={{ fontSize:12, color:c.light, flexShrink:0, marginTop:2 }}>{OBJ_ICONS[obj.type]||"•"}</span>
                 <div>
                   <span style={{ color: obj.optional?"#4a6050":"#c8d8ca", fontSize:13, lineHeight:1.5 }}>
                     {obj.description}
-                    {obj.optional && <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3a5040", marginLeft:6 }}>[OPTIONAL]</span>}
+                    {obj.optional && <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#364858", marginLeft:6 }}>[OPTIONAL]</span>}
                   </span>
                   {obj.items?.length > 0 && (
                     <div style={{ marginTop:4, display:"flex", flexWrap:"wrap", gap:3 }}>
@@ -309,11 +309,11 @@ function QuestDetailPanel({ quest, completed, onToggleComplete, onClose, onShowI
                           {item.shortName||item.name}
                         </Chip>
                       ))}
-                      {obj.items.length > 4 && <Chip style={{ color:"#3a5040", border:"1px solid #1e2b1e" }}>+{obj.items.length-4} more</Chip>}
+                      {obj.items.length > 4 && <Chip style={{ color:"#364858", border:"1px solid #1a2030" }}>+{obj.items.length-4} more</Chip>}
                     </div>
                   )}
                   {obj.foundInRaid && <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#e05252", marginTop:3 }}>⚑ FOUND IN RAID</div>}
-                  {obj.count > 1 && <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3a5040", marginTop:2 }}>×{obj.count}</div>}
+                  {obj.count > 1 && <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#364858", marginTop:2 }}>×{obj.count}</div>}
                 </div>
               </div>
             ))}
@@ -321,7 +321,7 @@ function QuestDetailPanel({ quest, completed, onToggleComplete, onClose, onShowI
 
           {/* Rewards */}
           <div style={{ marginBottom:15 }}>
-            <Lbl>REWARDS</Lbl>
+            <Lbl>EXTRACTION REWARDS</Lbl>
             <div style={{ display:"flex", gap:18, flexWrap:"wrap", marginBottom:8 }}>
               <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:12, color:"#c8a84b" }}>◈ {fmt(quest.experience)} XP</span>
               {quest.rewards.roubles > 0 && <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:12, color:"#2ecc71" }}>₽ {fmt(quest.rewards.roubles)}</span>}
@@ -342,7 +342,7 @@ function QuestDetailPanel({ quest, completed, onToggleComplete, onClose, onShowI
             )}
             {quest.rewards.offerUnlocks.length > 0 && (
               <div style={{ marginTop:10 }}>
-                <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#c8a84b", marginBottom:5 }}>UNLOCKS FOR PURCHASE</div>
+                <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#c8a84b", marginBottom:5 }}>STASH UNLOCKED</div>
                 {quest.rewards.offerUnlocks.map((u, i) => (
                   <div key={i} style={{ padding:"5px 9px", background:"rgba(200,168,75,.07)", border:"1px solid rgba(200,168,75,.2)", borderRadius:2, marginBottom:4, fontSize:12, color:"#c8a84b", fontFamily:"'Share Tech Mono',monospace" }}>
                     🔓 {u.item} <span style={{ opacity:.5 }}>@ {u.trader} LL{u.level}</span>
@@ -362,7 +362,7 @@ function QuestDetailPanel({ quest, completed, onToggleComplete, onClose, onShowI
           </div>
 
           <a href={quest.wikiUrl} target="_blank" rel="noreferrer" className="wiki-btn">
-            📖 VIEW WIKI — MAPS & GUIDES
+            📖 WIKI — MAPS & FIELD GUIDES
           </a>
         </div>
       </div>
@@ -377,17 +377,17 @@ function QuestCard({ quest, isExpanded, isDone, canStart, onToggleExpand, onTogg
     <div className={`q-card ${isDone ? "done" : ""}`} style={{ borderLeftColor: c.light }}>
       <div className="q-head" onClick={onToggleExpand}>
         <div className="chk" onClick={e => { e.stopPropagation(); onToggleComplete(); }}
-          style={{ borderColor: isDone?c.light:"#2e402e", background: isDone?c.bg:"transparent", color:c.light }}>
+          style={{ borderColor: isDone?c.light:"#2a3845", background: isDone?c.bg:"transparent", color:c.light }}>
           {isDone && "✓"}
         </div>
-        <span style={{ fontWeight:700, fontSize:15, flex:1, color:isDone?"#4a6050":"#dde8de", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
+        <span style={{ fontWeight:700, fontSize:15, flex:1, color:isDone?"#4a6050":"#d8dfe8", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
           {quest.name}
         </span>
-        {canStart && !isDone && <span className="ready-badge">READY</span>}
+        {canStart && !isDone && <span className="ready-badge">CLEARED HOT</span>}
         <Chip style={{ background:c.bg, color:c.label, border:`1px solid ${c.base}`, flexShrink:0 }}>{quest.trader}</Chip>
-        <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a5040", flexShrink:0 }}>{quest.location}</span>
+        <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#364858", flexShrink:0 }}>{quest.location}</span>
         <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#c8a84b", flexShrink:0 }}>L{quest.minLevel}</span>
-        <span style={{ color:"#2e402e", fontSize:10, transform:isExpanded?"rotate(180deg)":"none", transition:"transform .2s", flexShrink:0 }}>▼</span>
+        <span style={{ color:"#2a3845", fontSize:10, transform:isExpanded?"rotate(180deg)":"none", transition:"transform .2s", flexShrink:0 }}>▼</span>
       </div>
 
       {isExpanded && (
@@ -396,24 +396,24 @@ function QuestCard({ quest, isExpanded, isDone, canStart, onToggleExpand, onTogg
             {quest.objectives.slice(0, 5).map((obj, i) => (
               <div key={i} style={{ display:"flex", gap:8, marginBottom:5 }}>
                 <span style={{ color:c.light, fontSize:11, flexShrink:0 }}>{OBJ_ICONS[obj.type]||"•"}</span>
-                <span style={{ color: obj.optional?"#3a5040":"#9db8a0", fontSize:13, lineHeight:1.5 }}>{obj.description}</span>
+                <span style={{ color: obj.optional?"#364858":"#9db8a0", fontSize:13, lineHeight:1.5 }}>{obj.description}</span>
               </div>
             ))}
             {quest.objectives.length > 5 && (
-              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a5040" }}>+{quest.objectives.length-5} more objectives</div>
+              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#364858" }}>+{quest.objectives.length-5} more orders</div>
             )}
           </div>
           <div style={{ display:"flex", gap:14, marginBottom:10, flexWrap:"wrap" }}>
             <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:11, color:"#c8a84b" }}>◈ {fmt(quest.experience)} XP</span>
             {quest.rewards.roubles > 0 && <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:11, color:"#2ecc71" }}>₽ {fmt(quest.rewards.roubles)}</span>}
             {quest.rewards.offerUnlocks.length > 0 && (
-              <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:11, color:"#e8921a" }}>🔓 {quest.rewards.offerUnlocks.length} unlock{quest.rewards.offerUnlocks.length>1?"s":""}</span>
+              <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:11, color:"#e8921a" }}>🔓 {quest.rewards.offerUnlocks.length} cache unlock{quest.rewards.offerUnlocks.length>1?"s":""}</span>
             )}
           </div>
           <div style={{ display:"flex", gap:7 }}>
-            <a href={quest.wikiUrl} target="_blank" rel="noreferrer" className="wiki-btn" style={{ flex:1, marginTop:0 }}>📖 WIKI</a>
+            <a href={quest.wikiUrl} target="_blank" rel="noreferrer" className="wiki-btn" style={{ flex:1, marginTop:0 }}>📖 FIELD GUIDE</a>
             <button onClick={onDetails} style={{ padding:"9px 13px", background:c.bg, border:`1px solid ${c.base}`, color:c.label, cursor:"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, letterSpacing:".1em", textTransform:"uppercase", borderRadius:2 }}>
-              INSPECT →
+              INTEL →
             </button>
           </div>
         </div>
@@ -446,9 +446,9 @@ function QuestListView({ tasks, completed, toggleCompleted, onSelect }) {
     <div style={{ display:"flex", flexDirection:"column", height:"100%", overflow:"hidden" }}>
       {/* Row 1 — Search */}
       <div className="filter-row" style={{ paddingTop:8, paddingBottom:8 }}>
-        <input className="search-in" placeholder="SEARCH QUESTS..." value={search} onChange={e => setSearch(e.target.value)} style={{ flex:1, minWidth:0 }} />
-        <button className={`filter-btn ${hideDone?"active":""}`} onClick={() => setHideDone(p=>!p)} style={{ flexShrink:0 }}>{hideDone?"SHOW DONE":"HIDE DONE"}</button>
-        <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a5040", flexShrink:0, whiteSpace:"nowrap" }}>
+        <input className="search-in" placeholder="SEARCH INTEL..." value={search} onChange={e => setSearch(e.target.value)} style={{ flex:1, minWidth:0 }} />
+        <button className={`filter-btn ${hideDone?"active":""}`} onClick={() => setHideDone(p=>!p)} style={{ flexShrink:0 }}>{hideDone?"SHOW ALL OPS":"PURGE EXFIL'D"}</button>
+        <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#364858", flexShrink:0, whiteSpace:"nowrap" }}>
           {doneCount}/{tasks.length}
         </span>
       </div>
@@ -469,8 +469,8 @@ function QuestListView({ tasks, completed, toggleCompleted, onSelect }) {
             onDetails={() => onSelect(q)} />
         ))}
         {filtered.length === 0 && (
-          <div style={{ textAlign:"center", padding:60, color:"#2e402e", fontFamily:"'Share Tech Mono',monospace", fontSize:11 }}>
-            NO INTEL MATCHING QUERY
+          <div style={{ textAlign:"center", padding:60, color:"#2a3845", fontFamily:"'Share Tech Mono',monospace", fontSize:11 }}>
+            NO MATCHING OPS — CHECK YOUR SOURCES
           </div>
         )}
       </div>
@@ -527,7 +527,7 @@ function QuestTreeView({ tasks, completed, selectedQuest, onSelect }) {
 
   // Returns { stroke, width, marker } for an edge
   const edgeStyle = (from, to) => {
-    if (!selectedQuest || !selC) return { stroke:"#1e2b1e", width:1, bright:false };
+    if (!selectedQuest || !selC) return { stroke:"#1a2030", width:1, bright:false };
     const isAncChain = (ancestors.has(from)||from===selectedQuest.id) && (ancestors.has(to)||to===selectedQuest.id);
     const isDescChain = (descendants.has(from)||from===selectedQuest.id) && (descendants.has(to)||to===selectedQuest.id);
     if (from===selectedQuest.id || to===selectedQuest.id) return { stroke:selC.light, width:2, bright:true };
@@ -543,7 +543,7 @@ function QuestTreeView({ tasks, completed, selectedQuest, onSelect }) {
         {!showAll && traders.map(t => (
           <button key={t} className={`filter-btn ${traderFilter===t?"active":""}`} onClick={() => setTraderFilter(t)}
             style={traderFilter===t ? { borderColor:TC[t]?.light||"#5a7060", color:TC[t]?.label||"#9db8a0", background:TC[t]?.bg||"rgba(90,112,96,.1)" } : {}}>
-            <span style={{ display:"inline-block", width:5, height:5, borderRadius:1, background:traderFilter===t?(TC[t]?.light||"#5a7060"):"#2e402e", marginRight:4, verticalAlign:"middle" }}/>
+            <span style={{ display:"inline-block", width:5, height:5, borderRadius:1, background:traderFilter===t?(TC[t]?.light||"#5a7060"):"#2a3845", marginRight:4, verticalAlign:"middle" }}/>
             {t}
           </button>
         ))}
@@ -551,11 +551,11 @@ function QuestTreeView({ tasks, completed, selectedQuest, onSelect }) {
           style={showAll ? { borderColor:"#c8a84b", color:"#c8a84b" } : {}}>
           {showAll ? "◎ ALL TRADERS" : "ALL TRADERS"}
         </button>
-        <div style={{ marginLeft:"auto", fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a5040" }}>
-          {visibleTasks.length} tasks · {selectedQuest ? `⬡ ${selectedQuest.name}` : "click to inspect"}
+        <div style={{ marginLeft:"auto", fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#364858" }}>
+          {visibleTasks.length} tasks · {selectedQuest ? `◈ ${selectedQuest.name}` : "select for intel"}
         </div>
         {selectedQuest && (
-          <button onClick={() => onSelect(null)} className="filter-btn">CLEAR</button>
+          <button onClick={() => onSelect(null)} className="filter-btn">STAND DOWN</button>
         )}
       </div>
 
@@ -573,7 +573,7 @@ function QuestTreeView({ tasks, completed, selectedQuest, onSelect }) {
               <path d="M30 0 L0 0 0 30" fill="none" stroke="rgba(30,43,30,.5)" strokeWidth=".5"/>
             </pattern>
             <marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
-              <path d="M0,1 L6,3.5 L0,6 z" fill="#2a3828"/>
+              <path d="M0,1 L6,3.5 L0,6 z" fill="#252d3a"/>
             </marker>
             <marker id="arr-g" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
               <path d="M0,1 L6,3.5 L0,6 z" fill="#c8a84b"/>
@@ -612,7 +612,7 @@ function QuestTreeView({ tasks, completed, selectedQuest, onSelect }) {
                   stroke={isSel?c.light:(isChain&&selC?selC.light:(isDone?"#1a231a":c.base))}
                   strokeWidth={isSel?2:(isChain?1.5:1)}/>
                 <rect width={3} height={NH} rx={1} fill={isChain&&selC?selC.light:c.light} opacity={isDone?.2:.85}/>
-                <text x={11} y={NH/2-4} fill={isDone?"#3a5040":"#c8d8ca"} fontSize={11.5}
+                <text x={11} y={NH/2-4} fill={isDone?"#364858":"#c8d8ca"} fontSize={11.5}
                   fontFamily="'Rajdhani',sans-serif" fontWeight={700}>
                   {q.name.length>18?q.name.slice(0,17)+"…":q.name}
                 </text>
@@ -678,9 +678,9 @@ function UnlockablesView({ tasks, completed, onSelectQuest }) {
     <div style={{ display:"flex", height:"100%", overflow:"hidden" }}>
       {/* Left */}
       <div style={{ flex:1, display:"flex", flexDirection:"column", overflow:"hidden" }}>
-        <div style={{ padding:"9px 16px", borderBottom:"1px solid #1e2b1e", background:"#0a0f0a", display:"flex", gap:7, flexWrap:"wrap", alignItems:"center" }}>
-          <input className="search-in" placeholder="SEARCH ITEMS..." value={search} onChange={e=>setSearch(e.target.value)} style={{ width:160 }}/>
-          <div style={{ width:1, height:18, background:"#1e2b1e", flexShrink:0 }}/>
+        <div style={{ padding:"9px 16px", borderBottom:"1px solid #1a2030", background:"#090c10", display:"flex", gap:7, flexWrap:"wrap", alignItems:"center" }}>
+          <input className="search-in" placeholder="SEARCH CONTRABAND..." value={search} onChange={e=>setSearch(e.target.value)} style={{ width:160 }}/>
+          <div style={{ width:1, height:18, background:"#1a2030", flexShrink:0 }}/>
           {traders.map(t => (
             <button key={t} className={`filter-btn ${traderFilter===t?"active":""}`}
               onClick={() => setTraderFilter(t)}
@@ -688,7 +688,7 @@ function UnlockablesView({ tasks, completed, onSelectQuest }) {
               {t}
             </button>
           ))}
-          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a5040", marginLeft:"auto" }}>
+          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#364858", marginLeft:"auto" }}>
             {filtered.length} items
           </span>
         </div>
@@ -701,16 +701,16 @@ function UnlockablesView({ tasks, completed, onSelectQuest }) {
               const allDone = ch.every(q => completed.has(q.id));
               return (
                 <div key={u.item}
-                  style={{ padding:"9px 11px", background:isSel?c.bg:"#0e1410", border:`1px solid ${isSel?c.base:"#1e2b1e"}`, borderLeft:`3px solid ${c.light}`, borderRadius:2, cursor:"pointer", transition:"all .15s" }}
+                  style={{ padding:"9px 11px", background:isSel?c.bg:"#0d1014", border:`1px solid ${isSel?c.base:"#1a2030"}`, borderLeft:`3px solid ${c.light}`, borderRadius:2, cursor:"pointer", transition:"all .15s" }}
                   onClick={() => setSelected(isSel ? null : u)}>
                   <div style={{ fontSize:12.5, fontWeight:700, color:allDone?"#2ecc71":"#c8d8ca", marginBottom:3, lineHeight:1.3 }}>
                     {allDone?"✓ ":"🔓 "}{u.item}
                   </div>
-                  <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3a5040" }}>
+                  <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#364858" }}>
                     {u.trader} LL{u.traderLevel} · {ch.length} quest{ch.length!==1?"s":""}
                   </div>
                   <div style={{ marginTop:5 }}>
-                    <div style={{ height:2, background:"#1e2b1e", borderRadius:1, overflow:"hidden" }}>
+                    <div style={{ height:2, background:"#1a2030", borderRadius:1, overflow:"hidden" }}>
                       <div style={{ height:"100%", width:`${ch.length?ch.filter(q=>completed.has(q.id)).length/ch.length*100:0}%`, background:c.light, borderRadius:1, transition:"width .4s" }}/>
                     </div>
                   </div>
@@ -722,23 +722,23 @@ function UnlockablesView({ tasks, completed, onSelectQuest }) {
       </div>
 
       {/* Right: chain */}
-      <div style={{ width:310, borderLeft:"1px solid #1e2b1e", background:"#0a0f0a", display:"flex", flexDirection:"column", overflow:"hidden", flexShrink:0 }}>
+      <div style={{ width:310, borderLeft:"1px solid #1a2030", background:"#090c10", display:"flex", flexDirection:"column", overflow:"hidden", flexShrink:0 }}>
         {!selected ? (
-          <div style={{ flex:1, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:10, color:"#2e402e" }}>
+          <div style={{ flex:1, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:10, color:"#2a3845" }}>
             <div style={{ fontSize:36, opacity:.25 }}>🔓</div>
             <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, textAlign:"center", lineHeight:1.8 }}>
-              SELECT AN ITEM<br/>TO VIEW<br/>QUEST CHAIN
+              SELECT CONTRABAND<br/>TO VIEW<br/>ACQUISITION CHAIN
             </div>
           </div>
         ) : (
           <>
-            <div style={{ padding:"13px 15px", borderBottom:"1px solid #1e2b1e", background:"#0d120d" }}>
-              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#c8a84b", marginBottom:3 }}>UNLOCK PATH FOR</div>
-              <div style={{ fontWeight:700, fontSize:15, color:"#dde8de", lineHeight:1.2, marginBottom:4 }}>{selected.item}</div>
-              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3a5040" }}>
-                {chain.filter(q=>completed.has(q.id)).length}/{chain.length} quests complete
+            <div style={{ padding:"13px 15px", borderBottom:"1px solid #1a2030", background:"#0c1015" }}>
+              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#c8a84b", marginBottom:3 }}>ACQUISITION CHAIN —</div>
+              <div style={{ fontWeight:700, fontSize:15, color:"#d8dfe8", lineHeight:1.2, marginBottom:4 }}>{selected.item}</div>
+              <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#364858" }}>
+                {chain.filter(q=>completed.has(q.id)).length}/{chain.length} ops cleared
               </div>
-              <div style={{ marginTop:6, height:3, background:"#1e2b1e", borderRadius:2, overflow:"hidden" }}>
+              <div style={{ marginTop:6, height:3, background:"#1a2030", borderRadius:2, overflow:"hidden" }}>
                 <div style={{ height:"100%", width:`${chain.length?chain.filter(q=>completed.has(q.id)).length/chain.length*100:0}%`, background:tc(selected.trader).light, borderRadius:2, transition:"width .5s" }}/>
               </div>
             </div>
@@ -749,15 +749,15 @@ function UnlockablesView({ tasks, completed, onSelectQuest }) {
                 const isFinal = selected.questIds.includes(q.id);
                 return (
                   <div key={q.id} style={{ position:"relative", paddingLeft:22, marginBottom:9 }}>
-                    {i < chain.length-1 && <div style={{ position:"absolute", left:7, top:20, width:1, height:"calc(100% + 2px)", background:"#1e2b1e" }}/>}
+                    {i < chain.length-1 && <div style={{ position:"absolute", left:7, top:20, width:1, height:"calc(100% + 2px)", background:"#1a2030" }}/>}
                     <div style={{ position:"absolute", left:3, top:7, width:8, height:8, borderRadius:"50%", background:isDone?"#2ecc71":c.light, border:`2px solid ${isDone?"#2ecc71":c.base}` }}/>
                     <div onClick={() => onSelectQuest(q)}
-                      style={{ padding:"7px 9px", background:isFinal?c.bg:"#0e1410", border:`1px solid ${isFinal?c.light:"#1e2b1e"}`, borderRadius:2, cursor:"pointer" }}>
+                      style={{ padding:"7px 9px", background:isFinal?c.bg:"#0d1014", border:`1px solid ${isFinal?c.light:"#1a2030"}`, borderRadius:2, cursor:"pointer" }}>
                       <div style={{ fontSize:12.5, fontWeight:700, color:isDone?"#2ecc71":"#c8d8ca", marginBottom:2 }}>
                         {isDone?"✓ ":""}{q.name}
                         {isFinal && <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:8, color:"#c8a84b", marginLeft:5 }}>UNLOCK</span>}
                       </div>
-                      <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3a5040" }}>{q.trader} · {q.location}</div>
+                      <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#364858" }}>{q.trader} · {q.location}</div>
                     </div>
                   </div>
                 );
@@ -803,7 +803,7 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
   const [selectedMap, setSelectedMap]     = useState("Customs");
   const [selectedFloor, setSelectedFloor] = useState("Ground_Level");
   const [hideDone, setHideDone]           = useState(false);
-  const [showLabels, setShowLabels]       = useState(false);
+  const [showLabels, setShowLabels]       = useState(true);
   const [zoom, setZoom]                   = useState(1);
   const [pan, setPan]                     = useState({ x:0, y:0 });
   const [dragging, setDragging]           = useState(false);
@@ -972,8 +972,8 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
     <div style={{ display:"flex", flexDirection:"column", height:"100%", overflow:"hidden" }}>
 
       {/* Row 1 — map selector */}
-      <div className="filter-row" style={{ gap:6, background:"#0a0f0a" }}>
-        <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3d5040", flexShrink:0 }}>MAP</span>
+      <div className="filter-row" style={{ gap:6, background:"#090c10" }}>
+        <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a4a58", flexShrink:0 }}>AO</span>
         <div className="filter-row-vendors" style={{ flex:1, padding:0, border:"none", background:"transparent" }}>
           {Object.keys(MAP_META).map(m => {
             const pinCount = allPins.filter(p => p.mapName === m).length;
@@ -991,7 +991,7 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
         {/* Controls */}
         <div style={{ display:"flex", gap:5, flexShrink:0, alignItems:"center" }}>
           <button className={`filter-btn ${hideDone?"active":""}`} onClick={() => setHideDone(p=>!p)}>
-            {hideDone ? "SHOW DONE" : "HIDE DONE"}
+            {hideDone ? "SHOW ALL OPS" : "PURGE EXFIL'D"}
           </button>
           <button className={`filter-btn ${showLabels?"active":""}`} onClick={() => setShowLabels(p=>!p)}>
             {showLabels ? "LABELS ON" : "LABELS OFF"}
@@ -1001,14 +1001,14 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
             <button className="filter-btn" onClick={() => { setZoom(1); setPan({x:0,y:0}); }} style={{ padding:"4px 7px", fontSize:9 }}>{Math.round(zoom*100)}%</button>
             <button className="filter-btn" onClick={() => setZoom(z => Math.max(0.5, z-0.25))} style={{ padding:"4px 8px", fontSize:13 }}>−</button>
           </div>
-          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a5040" }}>{incompleteCount} active</span>
+          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#364858" }}>{incompleteCount} active ops</span>
         </div>
       </div>
 
       {/* Row 2 — floor selector */}
       {meta && meta.floors.length > 1 && (
-        <div className="filter-row" style={{ gap:5, background:"#080c08", paddingTop:5, paddingBottom:5 }}>
-          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#2e402e", flexShrink:0 }}>FLOOR</span>
+        <div className="filter-row" style={{ gap:5, background:"#080b0f", paddingTop:5, paddingBottom:5 }}>
+          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#2a3845", flexShrink:0 }}>FLOOR</span>
           {meta.floors.map(f => {
             const fCount = allPins.filter(p => p.mapName === selectedMap && p.floor === f).length;
             return (
@@ -1030,12 +1030,12 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
         onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onMouseUp}
         style={{ overflow:"hidden", cursor: dragging ? "grabbing" : "grab" }}>
         {gpsLoading || svgLoading ? (
-          <div style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100%", color:"#3a5040", fontFamily:"'Share Tech Mono',monospace", fontSize:11 }}>
-            {gpsLoading ? "LOADING MAP INTEL..." : "LOADING MAP..."}
+          <div style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100%", color:"#364858", fontFamily:"'Share Tech Mono',monospace", fontSize:11 }}>
+            {gpsLoading ? "ACQUIRING GPS INTEL..." : "LOADING TACTICAL MAP..."}
           </div>
         ) : !svgText ? (
-          <div style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100%", color:"#3a5040", fontFamily:"'Share Tech Mono',monospace", fontSize:11, textAlign:"center", padding:40 }}>
-            NO MAP FILE — run fetch-map-data-v2.mjs first
+          <div style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100%", color:"#364858", fontFamily:"'Share Tech Mono',monospace", fontSize:11, textAlign:"center", padding:40 }}>
+            NO TACTICAL LOADED — run setup.mjs first
           </div>
         ) : (
           /* Zoom + pan wrapper */
@@ -1083,12 +1083,12 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
                   <div style={{
                     width:pinSize, height:pinSize, borderRadius:"50%",
                     background: isDone ? "#1a231a" : c.light,
-                    border: `${isFlyoutQuest?3:2}px solid ${isDone?"#2a3828": isFlyoutQuest?"#fff":c.base}`,
+                    border: `${isFlyoutQuest?3:2}px solid ${isDone?"#252d3a": isFlyoutQuest?"#fff":c.base}`,
                     boxShadow: isDone ? "none" : isFlyoutQuest
                       ? `0 0 18px ${c.light}, 0 0 6px #fff, 0 0 3px #000`
                       : `0 0 10px ${c.light}cc, 0 0 3px #000`,
                     display:"flex", alignItems:"center", justifyContent:"center",
-                    fontSize: isFlyoutQuest?10:8, color: isDone?"#3a5040":"#fff", fontWeight:700,
+                    fontSize: isFlyoutQuest?10:8, color: isDone?"#364858":"#fff", fontWeight:700,
                     transition:"transform .12s, width .15s, height .15s",
                     flexShrink:0,
                   }}
@@ -1102,7 +1102,7 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
                     <div style={{
                       position:"absolute", top:-5, right:-5,
                       width:12, height:12, borderRadius:"50%",
-                      background:"#fff", color:"#070b09",
+                      background:"#fff", color:"#07090c",
                       fontFamily:"'Share Tech Mono',monospace", fontSize:8, fontWeight:700,
                       display:"flex", alignItems:"center", justifyContent:"center",
                       border:`1px solid ${c.light}`, pointerEvents:"none",
@@ -1140,7 +1140,7 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
                     <div className="pin-tooltip-name">{pin.questTitle}</div>
                     <div className="pin-tooltip-type" style={{ color:c.label }}>{pin.task.trader} · {pin.objType}</div>
                     {pin.objDesc && <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#5a7060", marginTop:3, whiteSpace:"normal" }}>{pin.objDesc}</div>}
-                    {isDone && <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#2ecc71", marginTop:3 }}>✓ COMPLETED</div>}
+                    {isDone && <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#2ecc71", marginTop:3 }}>✓ EXTRACTED</div>}
                   </div>
                 </div>
               );
@@ -1149,8 +1149,8 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
             {/* Empty state */}
             {visiblePins.length === 0 && (
               <div style={{ position:"absolute", inset:0, display:"flex", alignItems:"center", justifyContent:"center", pointerEvents:"none" }}>
-                <div style={{ color:"#2e402e", fontFamily:"'Share Tech Mono',monospace", fontSize:10 }}>
-                  NO QUEST MARKERS FOR THIS MAP{meta?.floors.length > 1 ? " / FLOOR" : ""}
+                <div style={{ color:"#2a3845", fontFamily:"'Share Tech Mono',monospace", fontSize:10 }}>
+                  NO OBJECTIVES ON RECORD FOR THIS LOCATION{meta?.floors.length > 1 ? " / FLOOR" : ""}
                 </div>
               </div>
             )}
@@ -1159,8 +1159,8 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
 
         {/* Legend — outside zoom wrapper so it stays fixed */}
         {!gpsLoading && svgText && visiblePins.length > 0 && (
-          <div style={{ position:"absolute", bottom:12, right:12, background:"rgba(7,11,9,.92)", border:"1px solid #2a3828", borderRadius:3, padding:"10px 13px", backdropFilter:"blur(6px)", minWidth:140, zIndex:50 }}>
-            <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3d5040", marginBottom:8, letterSpacing:".1em" }}>QUEST MARKERS</div>
+          <div style={{ position:"absolute", bottom:12, right:12, background:"rgba(7,11,9,.92)", border:"1px solid #252d3a", borderRadius:3, padding:"10px 13px", backdropFilter:"blur(6px)", minWidth:140, zIndex:50 }}>
+            <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3a4a58", marginBottom:8, letterSpacing:".1em" }}>OBJECTIVE MARKERS</div>
             {[...new Set(visiblePins.map(p => p.task.trader))].map(trader => {
               const c = tc(trader);
               const trPins = visiblePins.filter(p => p.task.trader === trader);
@@ -1169,17 +1169,17 @@ function MapView({ tasks, completed, selectedQuest, onSelectQuest }) {
                 <div key={trader} style={{ display:"flex", alignItems:"center", gap:8, marginBottom:5 }}>
                   <div style={{ width:12, height:12, borderRadius:"50%", background:c.light, flexShrink:0, boxShadow:`0 0 6px ${c.light}` }}/>
                   <span style={{ fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, color:c.label }}>{trader}</span>
-                  <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#3a5040", marginLeft:"auto" }}>{done}/{trPins.length}</span>
+                  <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#364858", marginLeft:"auto" }}>{done}/{trPins.length}</span>
                 </div>
               );
             })}
-            <div style={{ borderTop:"1px solid #1e2b1e", marginTop:7, paddingTop:7, display:"flex", flexWrap:"wrap", gap:"4px 10px" }}>
+            <div style={{ borderTop:"1px solid #1a2030", marginTop:7, paddingTop:7, display:"flex", flexWrap:"wrap", gap:"4px 10px" }}>
               {Object.entries(OBJECTIVE_ICONS).map(([type, icon]) => (
                 <span key={type} style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#4a6050" }}>{icon} {type}</span>
               ))}
             </div>
-            <div style={{ borderTop:"1px solid #1e2b1e", marginTop:6, paddingTop:6, fontFamily:"'Share Tech Mono',monospace", fontSize:8, color:"#2e402e" }}>
-              scroll to zoom · click pin for details
+            <div style={{ borderTop:"1px solid #1a2030", marginTop:6, paddingTop:6, fontFamily:"'Share Tech Mono',monospace", fontSize:8, color:"#2a3845" }}>
+              scroll to zoom · drag to reposition · click pin for intel
             </div>
           </div>
         )}
@@ -1250,13 +1250,13 @@ function ComparisonView({ tasks, progress, config }) {
   };
 
   const StatBlock = ({ stats, color, isLeading }) => (
-    <div style={{ background:`linear-gradient(135deg,${color}0d 0%,#0e1410 60%)`, border:`1px solid ${color}44`, borderLeft:`4px solid ${color}`, borderRadius:3, padding:"16px 20px", flex:1, position:"relative", overflow:"hidden" }}>
+    <div style={{ background:`linear-gradient(135deg,${color}0d 0%,#0d1014 60%)`, border:`1px solid ${color}44`, borderLeft:`4px solid ${color}`, borderRadius:3, padding:"16px 20px", flex:1, position:"relative", overflow:"hidden" }}>
       {/* Background hex watermark */}
       <div style={{ position:"absolute", right:-10, top:-10, fontSize:80, opacity:.04, lineHeight:1, pointerEvents:"none", color }}>⬡</div>
       <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:10 }}>
         <div style={{ width:10, height:10, borderRadius:"50%", background:color, boxShadow:`0 0 8px ${color}` }}/>
         <div style={{ fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:20, color, letterSpacing:".06em" }}>{stats.name}</div>
-        <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:`${color}88`, textTransform:"uppercase", letterSpacing:".1em" }}>PMC OPERATOR</div>
+        <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:`${color}88`, textTransform:"uppercase", letterSpacing:".1em" }}>ACTIVE PMC</div>
         {isLeading && <div style={{ marginLeft:"auto", fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:"#2ecc71", background:"rgba(46,204,113,.12)", border:"1px solid rgba(46,204,113,.3)", padding:"2px 7px", borderRadius:2 }}>LEADING</div>}
       </div>
       <div style={{ display:"flex", alignItems:"baseline", gap:14, marginBottom:10 }}>
@@ -1284,17 +1284,17 @@ function ComparisonView({ tasks, progress, config }) {
       <div style={{ display:"flex", flexDirection:"column", gap:8 }}>
         <StatBlock stats={s1} color={u1.color} isLeading={lead1} />
         <div style={{ display:"flex", alignItems:"center", gap:12, padding:"2px 8px" }}>
-          <div style={{ flex:1, height:1, background:"#1e2b1e" }}/>
-          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#2e402e" }}>VS</span>
-          <div style={{ flex:1, height:1, background:"#1e2b1e" }}/>
+          <div style={{ flex:1, height:1, background:"#1a2030" }}/>
+          <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#2a3845" }}>VS</span>
+          <div style={{ flex:1, height:1, background:"#1a2030" }}/>
         </div>
         <StatBlock stats={s2} color={u2.color} isLeading={lead2} />
       </div>
 
       {/* Trader breakdown */}
-      <div style={{ background:"#0a0f0a", border:"1px solid #1e2b1e", borderRadius:3, padding:"14px 16px" }}>
+      <div style={{ background:"#090c10", border:"1px solid #1a2030", borderRadius:3, padding:"14px 16px" }}>
         <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:14 }}>
-          <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3d5040", letterSpacing:".12em" }}>TRADER STANDINGS — HEAD TO HEAD</div>
+          <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a4a58", letterSpacing:".12em" }}>TRADER STANDINGS — KILL CONFIRMED</div>
           <div style={{ display:"flex", gap:14 }}>
             <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:u1.color }}>◀ {u1.name}</span>
             <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:u2.color }}>{u2.name} ▶</span>
@@ -1312,7 +1312,7 @@ function ComparisonView({ tasks, progress, config }) {
               <div key={t1.trader} style={{ display:"grid", gridTemplateColumns:"1fr 90px 1fr", gap:"0 10px", alignItems:"center", padding:"5px 8px", background:w1||w2?"#0d1210":"transparent", borderRadius:2, borderLeft:`2px solid ${c.base}` }}>
                 {/* Left bar — user1 */}
                 <div style={{ display:"flex", alignItems:"center", gap:6, justifyContent:"flex-end" }}>
-                  <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:w1?u1.color:"#3a5040", minWidth:28, textAlign:"right" }}>{t1.done}/{t1.total}</span>
+                  <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:w1?u1.color:"#364858", minWidth:28, textAlign:"right" }}>{t1.done}/{t1.total}</span>
                   <div style={{ height:8, flex:1, background:"#111811", borderRadius:2, overflow:"hidden", maxWidth:200 }}>
                     <div style={{ height:"100%", width:`${p1}%`, background:w1?`linear-gradient(90deg,${u1.color}88,${u1.color})`:`linear-gradient(90deg,${c.base},${c.base}cc)`, borderRadius:2, transition:"width .5s", marginLeft:"auto", float:"right" }}/>
                   </div>
@@ -1327,7 +1327,7 @@ function ComparisonView({ tasks, progress, config }) {
                   <div style={{ height:8, flex:1, background:"#111811", borderRadius:2, overflow:"hidden", maxWidth:200 }}>
                     <div style={{ height:"100%", width:`${p2}%`, background:w2?`linear-gradient(90deg,${u2.color}88,${u2.color})`:`linear-gradient(90deg,${c.base},${c.base}cc)`, borderRadius:2, transition:"width .5s" }}/>
                   </div>
-                  <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:w2?u2.color:"#3a5040", minWidth:28 }}>{t2?.done||0}/{t2?.total||0}</span>
+                  <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:w2?u2.color:"#364858", minWidth:28 }}>{t2?.done||0}/{t2?.total||0}</span>
                 </div>
               </div>
             );
@@ -1339,18 +1339,18 @@ function ComparisonView({ tasks, progress, config }) {
       {(unique1.length > 0 || unique2.length > 0) && (
         <div style={{ display:"flex", gap:10 }}>
           {[{label:u1.name, items:unique1, color:u1.color},{label:u2.name, items:unique2, color:u2.color}].map(({ label, items, color }) => (
-            <div key={label} style={{ flex:1, background:`linear-gradient(135deg,${color}08,#0a0f0a)`, border:`1px solid ${color}33`, borderTop:`3px solid ${color}`, borderRadius:3, padding:"12px 14px" }}>
+            <div key={label} style={{ flex:1, background:`linear-gradient(135deg,${color}08,#090c10)`, border:`1px solid ${color}33`, borderTop:`3px solid ${color}`, borderRadius:3, padding:"12px 14px" }}>
               <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, color:`${color}99`, letterSpacing:".12em", marginBottom:8 }}>
-                🏆 {label.toUpperCase()} ONLY — {items.length} QUEST{items.length!==1?"S":""}
+                🎖 {label.toUpperCase()} EXCLUSIVE — {items.length} OP{items.length!==1?"S":""}
               </div>
               {items.length === 0 ? (
-                <div style={{ color:"#2e402e", fontFamily:"'Share Tech Mono',monospace", fontSize:10 }}>Nothing yet</div>
+                <div style={{ color:"#2a3845", fontFamily:"'Share Tech Mono',monospace", fontSize:10 }}>No confirmed kills</div>
               ) : (
                 <div style={{ display:"flex", flexWrap:"wrap", gap:4 }}>
                   {items.slice(0,12).map(name => (
                     <Chip key={name} style={{ background:`${color}14`, color:`${color}dd`, border:`1px solid ${color}33`, fontSize:9 }}>{name}</Chip>
                   ))}
-                  {items.length > 12 && <Chip style={{ color:"#3a5040", border:"1px solid #1e2b1e" }}>+{items.length-12} more</Chip>}
+                  {items.length > 12 && <Chip style={{ color:"#364858", border:"1px solid #1a2030" }}>+{items.length-12} more</Chip>}
                 </div>
               )}
             </div>
@@ -1359,18 +1359,18 @@ function ComparisonView({ tasks, progress, config }) {
       )}
 
       {/* AI Commentary */}
-      <div style={{ background:"#0a0f0a", border:"1px solid #1e2b1e", borderRadius:3, padding:"14px 16px" }}>
+      <div style={{ background:"#090c10", border:"1px solid #1a2030", borderRadius:3, padding:"14px 16px" }}>
         <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:commentary?12:0 }}>
-          <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3d5040", letterSpacing:".12em" }}>
-            ◈ AI INTEL REPORT — POWERED BY CLAUDE
+          <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#3a4a58", letterSpacing:".12em" }}>
+            ◈ AFTER ACTION REPORT — POWERED BY CLAUDE
           </div>
           <button onClick={generateCommentary} disabled={loading}
-            style={{ padding:"8px 18px", background:loading?"#0e1410":"rgba(200,168,75,.08)", border:`1px solid ${loading?"#2a3828":"#c8a84b"}`, color:loading?"#3a5040":"#c8a84b", cursor:loading?"wait":"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, letterSpacing:".12em", textTransform:"uppercase", borderRadius:2, transition:"all .2s" }}>
+            style={{ padding:"8px 18px", background:loading?"#0d1014":"rgba(200,168,75,.08)", border:`1px solid ${loading?"#252d3a":"#c8a84b"}`, color:loading?"#364858":"#c8a84b", cursor:loading?"wait":"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, letterSpacing:".12em", textTransform:"uppercase", borderRadius:2, transition:"all .2s" }}>
             {loading ? "REQUESTING INTEL..." : "GENERATE DEBRIEF"}
           </button>
         </div>
         {commentary && (
-          <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:12, color:"#9db8a0", lineHeight:1.75, background:"#080c08", padding:"14px 16px", borderRadius:2, border:"1px solid #1e2b1e", whiteSpace:"pre-wrap" }}>
+          <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:12, color:"#9db8a0", lineHeight:1.75, background:"#080b0f", padding:"14px 16px", borderRadius:2, border:"1px solid #1a2030", whiteSpace:"pre-wrap" }}>
             {commentary}
           </div>
         )}
@@ -1455,7 +1455,7 @@ export default function App() {
             <animate attributeName="stroke-dashoffset" from="50" to="0" dur=".8s" fill="freeze"/>
           </polygon>
         </svg>
-        LOADING INTEL DATABASE...
+        INITIALIZING QUESTRESSOR...
       </div>
     </div>
   );
@@ -1467,14 +1467,14 @@ export default function App() {
       {/* Rename modal */}
       {renaming && (
         <div style={{ position:"fixed", inset:0, background:"rgba(0,0,0,.7)", zIndex:1000, display:"flex", alignItems:"center", justifyContent:"center" }}>
-          <div style={{ background:"#0e1410", border:"1px solid #1e2b1e", borderRadius:3, padding:24, minWidth:280 }}>
-            <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#c8a84b", marginBottom:12 }}>RENAME OPERATOR</div>
+          <div style={{ background:"#0d1014", border:"1px solid #1a2030", borderRadius:3, padding:24, minWidth:280 }}>
+            <div style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:10, color:"#c8a84b", marginBottom:12 }}>SET CALLSIGN</div>
             <input className="search-in" value={renameVal} onChange={e=>setRenameVal(e.target.value)}
               onKeyDown={e=>e.key==="Enter"?saveRename():e.key==="Escape"&&setRenaming(null)}
               style={{ width:"100%", marginBottom:12 }} autoFocus />
             <div style={{ display:"flex", gap:8 }}>
               <button onClick={saveRename} style={{ flex:1, padding:"8px", background:"rgba(200,168,75,.1)", border:"1px solid #c8a84b", color:"#c8a84b", cursor:"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, letterSpacing:".1em", textTransform:"uppercase", borderRadius:2 }}>SAVE</button>
-              <button onClick={() => setRenaming(null)} style={{ padding:"8px 14px", background:"transparent", border:"1px solid #1e2b1e", color:"#5a7060", cursor:"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, textTransform:"uppercase", borderRadius:2 }}>CANCEL</button>
+              <button onClick={() => setRenaming(null)} style={{ padding:"8px 14px", background:"transparent", border:"1px solid #1a2030", color:"#5a7060", cursor:"pointer", fontFamily:"'Rajdhani',sans-serif", fontWeight:700, fontSize:12, textTransform:"uppercase", borderRadius:2 }}>CANCEL</button>
             </div>
           </div>
         </div>
@@ -1490,8 +1490,8 @@ export default function App() {
               <polygon points="10,6 14,8.5 14,11.5 10,14 6,11.5 6,8.5" stroke="#c8a84b" strokeWidth=".8" fill="rgba(200,168,75,.12)"/>
             </svg>
             <div>
-              <div className="hdr-logo-text">EFT Quest Intel</div>
-              <div className="hdr-logo-sub">{tasks.length} TASKS</div>
+              <div className="hdr-logo-text">QUESTRESSOR</div>
+              <div className="hdr-logo-sub">{tasks.length} OPS LOADED</div>
             </div>
           </div>
           <div className="hdr-users">
@@ -1499,13 +1499,13 @@ export default function App() {
               <div key={key} style={{ display:"flex", alignItems:"center", gap:4 }}>
                 <button className="usr-btn"
                   onClick={() => setActiveUser(key)}
-                  style={{ borderColor: activeUser===key ? cfg.color : "#1e2b1e", color: activeUser===key ? cfg.color : "#3a5040", background: activeUser===key ? `${cfg.color}18` : "transparent" }}>
+                  style={{ borderColor: activeUser===key ? cfg.color : "#1a2030", color: activeUser===key ? cfg.color : "#364858", background: activeUser===key ? `${cfg.color}18` : "transparent" }}>
                   <div style={{ width:7, height:7, borderRadius:"50%", background:cfg.color, flexShrink:0 }}/>
                   {cfg.name}
                   <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:9, opacity:.7 }}>{pct}%</span>
                 </button>
                 <button onClick={() => { setRenaming(key); setRenameVal(cfg.name); }}
-                  style={{ background:"none", border:"none", color:"#2a3828", cursor:"pointer", fontSize:11, padding:"2px 3px", lineHeight:1, flexShrink:0 }} title="Rename">✎</button>
+                  style={{ background:"none", border:"none", color:"#252d3a", cursor:"pointer", fontSize:11, padding:"2px 3px", lineHeight:1, flexShrink:0 }} title="Rename">✎</button>
               </div>
             ))}
           </div>
@@ -1514,11 +1514,11 @@ export default function App() {
         <div className="hdr-tabs">
           <div className="tab-select-wrap">
             <select className="tab-select" value={tab} onChange={e => setTab(e.target.value)}>
-              <option value="list">Quest Log</option>
-              <option value="tree">Quest Tree</option>
-              <option value="map">Map</option>
-              <option value="unlockables">Unlockables</option>
-              <option value="compare">Compare</option>
+              <option value="list">Intel Board</option>
+              <option value="tree">Op Chain</option>
+              <option value="map">Tactical</option>
+              <option value="unlockables">Contraband</option>
+              <option value="compare">Debrief</option>
             </select>
           </div>
 
