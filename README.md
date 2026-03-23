@@ -1,29 +1,45 @@
-# ☠️ Questressor
+# [☠️ Questressor](https://github.com/vandermerwewaj/Questressor) 
 
 > *The tool that aggravates your progress — or aggravates you into making it.*
 
 A full-featured Escape from Tarkov quest intelligence system built for two PMC operators. Tracks suffering per player, maps quest chains as a war tree, pins objective locations on interactive tactical maps, and generates AI-powered debrief reports to document who's falling behind.
 
-React + Vite frontend. Node.js + Express backend. All intel stored locally — no accounts, no cloud, no extraction fees.
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) 
 
+![Static Badge](https://img.shields.io/badge/react-v18.2.0-%2361DAFB?style=plastic&logo=react&logoColor=%2361DAFB&logoSize=auto) + ![Static Badge](https://img.shields.io/badge/vite-v7.3.1-%239135FF?style=plastic&logo=vite&logoColor=%239135FF&logoSize=auto) frontend.
+
+![Static Badge](https://img.shields.io/badge/node.js-v24.14.0-%235FA04E?style=plastic&logo=nodedotjs&logoColor=%235FA04E&logoSize=auto) + ![Static Badge](https://img.shields.io/badge/express-v4.18.2-%23000000?style=plastic&logo=express&logoColor=%23000000&logoSize=auto)
+ backend.
+ 
+All intel stored locally — no accounts, no cloud, no extraction fees.
 ---
 
 ## CAPABILITIES
 
 **Quest Log** — All 494 quests filterable by trader, searchable by name. One click to mark complete — prerequisite quests auto-complete, uncompleting cascades forward through the chain. Alphabetical. No excuses.
+<div style="text-align: center;">  
   <img width="800" height="400" alt="Intel Board" src="https://github.com/user-attachments/assets/fa53ce79-2bfd-47a8-894f-32b2a5835bd3" />
+</div>
 
 **Quest Tree** — Visual directed graph of quest chains per trader. Click any node to illuminate its full ancestor/descendant chain in that trader's colour. Green dot means you're cleared hot.
+<div style="text-align: center;">  
   <img width="800" height="400" alt="DP Chain" src="https://github.com/user-attachments/assets/fb550a30-7025-4fe4-8933-f30b4d9be3f8" />
+</div>
 
 **Tactical Map** — 10 maps with per-floor switching. 197 GPS-positioned quest objectives plotted as colour-coded pins. Scroll to zoom toward cursor, drag to pan, toggle labels, hide completed objectives. Click any pin to open the full intel flyout — selected quest pins pulse and number themselves so you know exactly where to be.
+<div style="text-align: center;">  
   <img width="800" height="400" alt="Tactical" src="https://github.com/user-attachments/assets/2d24847f-d886-4ec6-8151-417f98fe2ebc" />
+</div>
 
 **Unlockables** — Full catalogue of 224 trader offer unlocks with quest chain progress. Know what you're grinding toward before you grind.
+<div style="text-align: center;">  
   <img width="800" height="400" alt="Contraband" src="https://github.com/user-attachments/assets/09551b58-c133-4b36-b594-44f0a54fe392" />
+</div>
 
 **Operator Compare** — Side-by-side PMC stats, trader-by-trader standings, bragging rights board, and an optional AI-generated debrief report powered by Claude. Useful for establishing who needs to be embarrassed into playing more.
+<div style="text-align: center;">  
   <img width="800" height="400" alt="Debrief" src="https://github.com/user-attachments/assets/38f11588-2e81-4ffd-b5e6-0069024233d1" />
+</div>
 
 **Dual Operator** — Separate progress tracking per PMC. Second operator connects over LAN from their own machine. Progress saves automatically.
 
