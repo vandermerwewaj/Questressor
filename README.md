@@ -11,14 +11,19 @@ React + Vite frontend. Node.js + Express backend. All intel stored locally — n
 ## CAPABILITIES
 
 **Quest Log** — All 494 quests filterable by trader, searchable by name. One click to mark complete — prerequisite quests auto-complete, uncompleting cascades forward through the chain. Alphabetical. No excuses.
+  <img width="800" height="400" alt="Intel Board" src="https://github.com/user-attachments/assets/fa53ce79-2bfd-47a8-894f-32b2a5835bd3" />
 
 **Quest Tree** — Visual directed graph of quest chains per trader. Click any node to illuminate its full ancestor/descendant chain in that trader's colour. Green dot means you're cleared hot.
+  <img width="800" height="400" alt="DP Chain" src="https://github.com/user-attachments/assets/fb550a30-7025-4fe4-8933-f30b4d9be3f8" />
 
 **Tactical Map** — 10 maps with per-floor switching. 197 GPS-positioned quest objectives plotted as colour-coded pins. Scroll to zoom toward cursor, drag to pan, toggle labels, hide completed objectives. Click any pin to open the full intel flyout — selected quest pins pulse and number themselves so you know exactly where to be.
+  <img width="800" height="400" alt="Tactical" src="https://github.com/user-attachments/assets/2d24847f-d886-4ec6-8151-417f98fe2ebc" />
 
 **Unlockables** — Full catalogue of 224 trader offer unlocks with quest chain progress. Know what you're grinding toward before you grind.
+  <img width="800" height="400" alt="Contraband" src="https://github.com/user-attachments/assets/09551b58-c133-4b36-b594-44f0a54fe392" />
 
 **Operator Compare** — Side-by-side PMC stats, trader-by-trader standings, bragging rights board, and an optional AI-generated debrief report powered by Claude. Useful for establishing who needs to be embarrassed into playing more.
+  <img width="800" height="400" alt="Debrief" src="https://github.com/user-attachments/assets/38f11588-2e81-4ffd-b5e6-0069024233d1" />
 
 **Dual Operator** — Separate progress tracking per PMC. Second operator connects over LAN from their own machine. Progress saves automatically.
 
